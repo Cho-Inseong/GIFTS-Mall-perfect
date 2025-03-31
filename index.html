@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- 헤더 -->
+    <!-- 헤더 영역-->
     <header>
-        <img src="./logo.png" alt="이미지" title="이미지">
+        <img src="./logo.png" alt="img" title="img">
         <ul>
             <li><a href="#">소개</a></li>
             <li class="menu">
@@ -29,5 +29,44 @@
             <li><a href="#">관리자</a></li>
         </ul>
     </header>
+
+    <!-- 비주얼 이미지 영역 -->
+    <div class="section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02" >
+        <input type="radio" name="slide" id="slide03" >
+        
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a class="slide">
+                        <div class="slide_area1">
+                            <label for="slide03" class="left"></label>
+                            <img src="./img/slide1.png" alt="img" title="img">
+                            <label for="slide02" class="right"></label>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="slide">
+                        <div class="slide_area2">
+                            <label for="slide01" class="left"></label>
+                            <img src="./img/slide2.png" alt="img" title="img">
+                            <label for="slide03" class="right"></label>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="slide">
+                        <div class="slide_area3">
+                            <label for="slide02" class="left"></label>
+                            <img src="./img/slide3.png" alt="img" title="img">
+                            <label for="slide01" class="right"></label>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
