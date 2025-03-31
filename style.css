@@ -1,0 +1,74 @@
+/* 공통영역 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 0px 500px;
+}
+
+header img {
+    width: 100px;
+    height: 30px;
+}
+
+header ul li {
+    margin: 0px 10px;
+    font-weight: 600;
+}
+
+/* 메뉴 내비게이션 */
+/* 전부 세로로 만들고 depth가 헤더 밑에 나올수 있게 position relative해주기 */
+.menu {
+    display: inline-block;
+    position: relative;
+}
+
+/* 전체상품 인기상품 안보이게 하기 */
+.depth {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+    flex-direction: column;
+}
+
+.depth li {
+    margin: 10px 0;
+}
+
+/* 호버시 전체상품 인기상품 나타나는거 */
+.menu:hover .depth {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
