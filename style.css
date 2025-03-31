@@ -417,3 +417,7 @@ footer .img_box img {
 footer .img_box img:hover {
     filter: grayscale(0);
 }
+
+footer .logo img {
+    width: 100px;
+}
