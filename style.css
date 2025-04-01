@@ -421,3 +421,79 @@ footer .img_box img:hover {
 footer .logo img {
     width: 100px;
 }
+
+/* 소개 페이지 */
+.introduce .big_img {
+    padding-top: 60px;
+}
+
+.introduce .big_img  {
+    width: 100%;
+    height: 500px;
+    background-image: url(./img/25.JPG);
+    background-size: 100% 100%;
+    filter: brightness(50%);
+    position: relative;
+}
+
+.introduce .text_box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 17px;
+    
+}
+
+.introduce .text_box .highlight {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+/* 소개페이지/session1 */
+.session {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f5fa;
+}
+
+.session1 {
+    display: flex;
+    height: 700px;
+}
+
+.session2 {
+    background-color: #141f33;
+}
+
+.session2 .containers .session1 .text_box p {
+    color: #f4f5fa;
+}
+
+.session1 .text_box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.session1 .img_box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.session1 .img_box img {
+    width: 600px;  
+}
+
+.session1 .text_box p{
+    font-weight: 600;
+    color: #141f33;
+    font-size: large;
+}
