@@ -567,7 +567,6 @@ footer .logo img {
 
 .item_box .popular_box .bottom_text .title {
     font-size: 20px;
-
 }
 
 .item_box .popular_box .bottom_text .price {
@@ -626,3 +625,5 @@ footer .logo img {
     font-size: 12px;
     font-weight: 600;
 }
+
+/* 인기상품 */
