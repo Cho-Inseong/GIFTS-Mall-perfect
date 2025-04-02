@@ -13,27 +13,49 @@
     <!-- 헤더 영역-->
     <header>
         <a href="../index.html"><img src="../logo.png" alt="img" title="img">
-        <ul>
-            <li><a href="./intorduce.html">소개</a></li>
-            <li class="menu">
-                <a href="./allProducts.html">판매상품</a>
-                <ul class="depth">
-                    <li><a href="./allProducts.html">전체상품</a></li>
-                    <li><a href="./popular.html">인기상품</a></li>
-                </ul>
-            </li>
-            <li><a href="#">가맹점</a></li>
-            <li><a href="./shoppingCart.html">장바구니</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">관리자</a></li>
-        </ul>
+            <ul>
+                <li><a href="./intorduce.html">소개</a></li>
+                <li class="menu">
+                    <a href="./allProducts.html">판매상품</a>
+                    <ul class="depth">
+                        <li><a href="./allProducts.html">전체상품</a></li>
+                        <li><a href="./popular.html">인기상품</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">가맹점</a></li>
+                <li><a href="./shoppingCart.html">장바구니</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">관리자</a></li>
+            </ul>
     </header>
     <!-- 메인 -->
-    <main>
-        
+    <main class="shoppingCart">
+        <div class="containers">
+            <table class="shoppingCart_table">
+                <tr class="tr_title">
+                    <td>이미지</td>
+                    <td>상품명</td>
+                    <td>수량</td>
+                    <td>단가</td>
+                    <td>총액</td>
+                </tr>
+                <tr class="detail">
+                    <td><img src="../[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/건강식품/1.PNG" alt="img" title="img">
+                    </td>
+                    <td>이뮨 멀티비타민&미네랄</td>
+                    <td><input type="number"></td>
+                    <td>65,000원</td>
+                    <td>65,000원</td>
+                </tr>
+                <tr class="guljae_gumae">
+                    <td colspan="3" class="guljae">결제금액: 65,000원</td>
+                    <td colspan="2"><button class="btn btn-primary">구매하기</button></td>
+                </tr>
+            </table>
+        </div>
     </main>
     <!-- 푸터 영역 -->
     <footer>

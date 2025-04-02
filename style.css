@@ -627,3 +627,48 @@ footer .logo img {
 }
 
 /* 인기상품 */
+
+/* 장바구니 */
+/* 테이블 배경 */
+.shoppingCart {
+    padding-top: 100px;
+    background-color: #f4f5fa;
+}
+/* 테이블 직접 편집 */
+.shoppingCart .shoppingCart_table {
+    width: 100%;
+}
+/* 테이블 제목 td */
+.shoppingCart .shoppingCart_table .tr_title td{
+    font-size: 25px;
+    font-weight: 600;
+}
+/* 테이블 td편집 */
+.shoppingCart .shoppingCart_table td {
+    color: #141f33;
+    border-bottom: 1px solid #141f33;
+    border-top: 1px solid #141f33; 
+    width: 20%;
+    text-align: center;
+}
+/* 테이블 내용 */
+/* .shoppingCart .shoppingCart_table .detail  {
+    
+} */
+/* 내용 tr img */
+.shoppingCart .shoppingCart_table .detail img {
+    width: 90%;
+}
+/* 내용 td */
+.shoppingCart .shoppingCart_table .detail td {
+    padding: 5px;
+}
+
+/* 결제금액, 구매하기 */
+.guljae_gumae {
+    height: 100px;
+}
+
+.guljae {
+    font-size: 25px;
+}
