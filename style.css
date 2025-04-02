@@ -672,3 +672,56 @@ footer .logo img {
 .guljae {
     font-size: 25px;
 }
+
+/* 로딩화면 */
+.loading_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOUT 4s forwards;
+    animation-delay: 4s;
+    z-index: 100000;
+}
+
+@keyframes fadeOUT {
+    0% {
+        opacity: 1;;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    background: linear-gradient(90deg, #141f33 50%, #0000 0) right/200% 100%;
+    animation: tlqkf 4s linear;
+}
+
+.loader::before {
+    content: "Loading...";
+    color: #0000;
+    padding: 0 5px;
+    background: inherit;
+    background-image: linear-gradient(90deg, #fff 50% , #141f33 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes tlqkf {
+    100% {
+        background-position: left;
+    }
+}
