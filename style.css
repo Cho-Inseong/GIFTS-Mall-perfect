@@ -237,7 +237,7 @@ header ul li {
     margin-bottom: 10px;
 }
 
-.sales_products .box {
+.sales_products .box, .common_box .box {
     width: 400px;
     height: 450px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
@@ -652,7 +652,36 @@ footer .logo img {
     font-weight: 600;
 }
 
-/* 인기상품 */
+/* 전체상품/B모듈/비디오 플레이 */
+.v_play {
+    position: relative;
+}
+
+.v_play video {
+    width: 100%;
+    height: 100%;
+}
+
+.v_btn_group {
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v_btn_group button {
+    margin: 0px 5px;
+}
+
+
+
+
+
+
+
+
 
 /* 장바구니 */
 /* 테이블 배경 */
@@ -751,3 +780,5 @@ footer .logo img {
         background-position: left;
     }
 }
+
+/*  */
