@@ -237,7 +237,8 @@ header ul li {
     margin-bottom: 10px;
 }
 
-.sales_products .box, .common_box .box {
+.sales_products .box,
+.common_box .box {
     width: 400px;
     height: 450px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
@@ -277,7 +278,7 @@ header ul li {
 }
 
 .gongji .gongji_table tr,
-td {
+.gongji .gongji_table td {
     color: #f4f5fa;
 
 }
@@ -392,6 +393,11 @@ td {
 .ip_table tr {
     border-bottom: 1px solid #f4f5fa;
     border-top: 1px solid #f4f5fa;
+}
+
+.ip_table tr p,
+.ip_table tr span {
+    color: white;
 }
 
 /* 푸터 */
@@ -519,7 +525,7 @@ footer .logo img {
 .session1 .motto h3 {
     width: 100%;
     text-align: center;
-    color: white;   
+    color: white;
     font-weight: 600;
     position: absolute;
     bottom: 0;
@@ -680,6 +686,126 @@ footer .logo img {
 
 
 
+/* 전체상품/B모듈/비회원 주문하기 */
+.modal_witdh {
+    width: 1300px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.junsi {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.junsi1 {
+    width: 49%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
+}
+
+.order1 {
+    width: 49%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
+}
+
+/* junsi1에 있는 상품들 나오는 구역 */
+.j_item_box_area {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.j_item_box {
+    width: 270px;
+    height: 340px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.192);
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.j_item_img {
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+}
+
+.j_item_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.j_item_text {
+    text-align: center;
+    font-weight: 600;
+}
+
+.j_item_text p:nth-of-type(2) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* order1 */
+/* order1 테이블 */
+.order1 {
+    overflow-y: scroll;
+}
+
+.dragged {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.order_table {
+    width: 97%;
+    margin: 10px auto;
+}
+
+.order_table td {
+    border-top: 1px solid #141f33;
+    border-bottom: 1px solid #141f33;
+}
+
+.order_table .tr_head td {
+    text-align: center;
+    font-size: 15px;
+    width: 100px ;
+    
+}
+
+.order_table .tr_detail td:nth-of-type(2) {
+    width: 10px;
+    font-size: 10px;
+}
+
+.order_table .tr_detail td:nth-of-type(3) {
+    width: 100px;
+    font-size: 10px;
+}
+
+.order_table .tr_detail td img {
+    width: 100%;
+    padding: 5px;
+}
+
+.order_table .tr_detail td {
+    text-align: center;
+    font-size: 15px;
+    width: 100px ;
+    
+}
 
 
 
@@ -689,23 +815,27 @@ footer .logo img {
     padding-top: 100px;
     background-color: #f4f5fa;
 }
+
 /* 테이블 직접 편집 */
 .shoppingCart .shoppingCart_table {
     width: 100%;
 }
+
 /* 테이블 제목 td */
-.shoppingCart .shoppingCart_table .tr_title td{
+.shoppingCart .shoppingCart_table .tr_title td {
     font-size: 25px;
     font-weight: 600;
 }
+
 /* 테이블 td편집 */
 .shoppingCart .shoppingCart_table td {
     color: #141f33;
     border-bottom: 1px solid #141f33;
-    border-top: 1px solid #141f33; 
+    border-top: 1px solid #141f33;
     width: 20%;
     text-align: center;
 }
+
 /* 테이블 내용 */
 /* .shoppingCart .shoppingCart_table .detail  {
     
@@ -714,6 +844,7 @@ footer .logo img {
 .shoppingCart .shoppingCart_table .detail img {
     width: 90%;
 }
+
 /* 내용 td */
 .shoppingCart .shoppingCart_table .detail td {
     padding: 5px;
@@ -746,7 +877,8 @@ footer .logo img {
 
 @keyframes fadeOUT {
     0% {
-        opacity: 1;;
+        opacity: 1;
+        ;
         visibility: visible;
     }
 
@@ -770,7 +902,7 @@ footer .logo img {
     color: #0000;
     padding: 0 5px;
     background: inherit;
-    background-image: linear-gradient(90deg, #fff 50% , #141f33 0);
+    background-image: linear-gradient(90deg, #fff 50%, #141f33 0);
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -780,5 +912,3 @@ footer .logo img {
         background-position: left;
     }
 }
-
-/*  */

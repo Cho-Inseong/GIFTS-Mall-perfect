@@ -39,17 +39,17 @@
                 <div class="v_play">
                     <video class="v_video" src="../[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/B-Module/AD.mp4"></video>
                     <div class="v_btn_group">
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">재생</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">일시정지</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">정지</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">되감기</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">빨리감기</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">감속하기</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">배속하기</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">배속초기화</button>
-                        <button class="btn btn-primary v_btn" id="vc_btn" onclick="v_play(this)">컨트롤러 숨기기</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">반복 켜기</button>
-                        <button class="btn btn-primary v_btn" onclick="v_play(this)">자동재생 켜기</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">재생</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">일시정지</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">정지</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">되감기</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">빨리감기</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">감속하기</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">배속하기</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">배속초기화</button>
+                        <button class="btn btn-primary v_btn" id="vc_btn" onclick="vPlay(this)">컨트롤러 숨기기</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">반복 켜기</button>
+                        <button class="btn btn-primary v_btn" onclick="vPlay(this)">자동재생 켜기</button>
                     </div>
                 </div>
             </div>
@@ -485,8 +485,87 @@
                     </div>
                 </div>
             </div>
+            <div class="noMember d-flex justify-content-center p-5">
+                <button class="btn btn-success" onclick="showModal()">비회원 주문하기</button>
+            </div>
         </div>
     </main>
+    <!-- 비회원 모달 -->
+    <div class="modal fade noMember_modal" tabindex="-1">
+        <div class="modal-dialog ">
+            <div class="modal-content modal_witdh">
+                <div class="modal-header">
+                    <h5 class="modal-title ">비회원 주문</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- 모달 바디 -->
+                <div class="modal-body">
+                    <p class="mb-1">비회원 아이디</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control random_id w-40" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" readonly>
+                    </div>
+                    <hr class="mb-0">
+                    <div class="junsi">
+                        <div class="junsi1">
+                            <div class="j_item_box_area">
+
+                                <!-- <div class="j_item_box">
+                                    <div class="j_item_img">
+                                        <img src="" alt="img" title="img">
+                                    </div>
+                                    <div class="j_item_text">
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div> -->
+
+                            </div>
+                        </div>
+                        <div class="order1">
+                            <table class="order_table">
+                                <tr class="tr_head">
+                                    <td>사진</td>
+                                    <td>상품명</td>
+                                    <td>수량</td>
+                                    <td>단가</td>
+                                    <td>금액</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <div>
+                        <h3 class="tototal_price">총 금액: 0원</h3>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                        <button type="button" class="btn btn-primary" onclick="order()">주문하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 토스트 -->
+    <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+          <div class="toast-header">
+            <strong class="mr-auto">비회원 주문하기</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            <span class="toast_show_price"></span>
+          </div>
+        </div>
+      </div>
 
     <!-- 푸터 영역 -->
     <footer>
@@ -533,8 +612,12 @@
         </div>
     </footer>
     <script src="../[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/공통/jquery-3.4.1.min.js"></script>
+    <script src="../[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/공통/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
     <script src="../script.js"></script>
-    <script></script>
+    <script>
+        // $(document).ready(() => {
+        // })
+    </script>
 </body>
 
 </html>
