@@ -1,4 +1,6 @@
 <?php
+include('./config/dbConnect.php');
+
 $request = $_SERVER['REQUEST_URI'];
 $path = explode("?", $request);
 $path[1] = isset($path[1]) ? $path[1] : null;

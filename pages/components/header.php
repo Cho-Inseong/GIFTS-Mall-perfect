@@ -1,5 +1,5 @@
 <header>
-    <a href="./index.html"><img src="./logo.png" alt="img" title="img">
+    <a href="./"><img src="./logo.png" alt="img" title="img">
     </a>
     <ul>
         <li><a href="introduce">소개</a></li>
@@ -14,8 +14,8 @@
         <li><a href="shoppingCart">장바구니</a></li>
     </ul>
     <ul>
-        <li><a href="sign_in">로그인</a></li>
-        <li><a href="sign_up">회원가입</a></li>
+        <li><a href="#" onclick="sign_in()">로그인</a></li>
+        <li><a href="#" onclick="sign_up()">회원가입</a></li>
         <!-- <li><a href="admin">관리자</a></li> -->
     </ul>
 </header>

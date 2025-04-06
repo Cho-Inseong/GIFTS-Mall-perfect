@@ -239,3 +239,12 @@ function order() {
 
   $("#liveToast").toast('show');
 }
+
+
+
+
+// C모듈 시작
+// 회원가입
+function sign_up() {
+  $(".sign_up_modal").modal("show")
+}

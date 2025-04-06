@@ -301,3 +301,39 @@
         </div>
     </div>
 </main>
+
+<!-- 회원가입 모달 -->
+<div class="fade modal sign_up_modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">회원가입</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>이이디</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <p>비밀번호</p>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <p>이름</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <p>이메일</p>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-primary">회원가입</button>
+            </div>
+        </div>
+    </div>
+</div>
