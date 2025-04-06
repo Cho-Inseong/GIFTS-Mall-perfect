@@ -1,387 +1,303 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIFTS-Mallss</title>
-    <link rel="stylesheet" href="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/공통/bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-    <!-- 로딩화면 -->
-    <!-- <div class="loading_screen">
+<!-- 로딩화면 -->
+<!-- <div class="loading_screen">
         <div class="loader"></div>
     </div> -->
-    <!-- 헤더 영역-->
-    <header>
-        <a href="./index.html"><img src="./logo.png" alt="img" title="img">
-        </a>
-        <ul>
-            <li><a href="./pages/intorduce.html">소개</a></li>
-            <li class="menu">
-                <a href="./pages/allProducts.html">판매상품</a>
-                <ul class="depth">
-                    <li><a href="./pages/allProducts.html">전체상품</a></li>
-                    <li><a href="#">인기상품</a></li>
-                </ul>
+<!-- 비주얼 이미지 영역 -->
+<div class="section">
+    <input type="radio" name="slide" id="slide01" checked>
+    <input type="radio" name="slide" id="slide02">
+    <input type="radio" name="slide" id="slide03">
+
+    <div class="slidewrap">
+        <ul class="slidelist">
+            <li>
+                <a class="slide">
+                    <div class="slide_area1">
+                        <label for="slide03" class="left"></label>
+                        <img src="./img/slide1.png" alt="img" title="img">
+                        <label for="slide02" class="right"></label>
+                    </div>
+                </a>
             </li>
-            <li><a href="#">가맹점</a></li>
-            <li><a href="./pages/shoppingCart.html">장바구니</a></li>
+            <li>
+                <a class="slide">
+                    <div class="slide_area2">
+                        <label for="slide01" class="left"></label>
+                        <img src="./img/slide2.png" alt="img" title="img">
+                        <label for="slide03" class="right"></label>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="slide">
+                    <div class="slide_area3">
+                        <label for="slide02" class="left"></label>
+                        <img src="./img/slide3.png" alt="img" title="img">
+                        <label for="slide01" class="right"></label>
+                    </div>
+                </a>
+            </li>
         </ul>
-        <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">관리자</a></li>
-        </ul>
-    </header>
+    </div>
+</div>
 
-    <!-- 비주얼 이미지 영역 -->
-    <div class="section">
-        <input type="radio" name="slide" id="slide01" checked>
-        <input type="radio" name="slide" id="slide02">
-        <input type="radio" name="slide" id="slide03">
-
-        <div class="slidewrap">
-            <ul class="slidelist">
-                <li>
-                    <a class="slide">
-                        <div class="slide_area1">
-                            <label for="slide03" class="left"></label>
-                            <img src="./img/slide1.png" alt="img" title="img">
-                            <label for="slide02" class="right"></label>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="slide">
-                        <div class="slide_area2">
-                            <label for="slide01" class="left"></label>
-                            <img src="./img/slide2.png" alt="img" title="img">
-                            <label for="slide03" class="right"></label>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="slide">
-                        <div class="slide_area3">
-                            <label for="slide02" class="left"></label>
-                            <img src="./img/slide3.png" alt="img" title="img">
-                            <label for="slide01" class="right"></label>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+<!-- 콘텐츠 영역 -->
+<main>
+    <!-- 판매상품 -->
+    <div class="sales_products">
+        <div class="containers">
+            <!-- 건강식품 -->
+            <p class="title">건강식품</p>
+            <div class="d-flex justify-content-between">
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/건강식품/1.PNG" alt="img" title="img">
+                    <p>이뮨 멀티비타민&미네랄</p>
+                    <span class="box_span">65,000원</span>
+                    <span class="tpdlf_span">75,000</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/건강식품/2.PNG" alt="img" title="img">
+                    <p>센트룸</p>
+                    <span class="box_span">27,000원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/건강식품/3.PNG" alt="img" title="img">
+                    <p>닥터브라이언</p>
+                    <span class="box_span">2,000원</span>
+                </div>
+            </div>
+            <hr class="mb-5 mt-5">
+            <!-- 디지털 -->
+            <p class="title">디지털</p>
+            <div class="box_area d-flex justify-content-between">
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/디지털/1.PNG" alt="img" title="img">
+                    <p>PANTONE PD충전 보조배터리</p>
+                    <span class="box_span">24,400원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/디지털/2.PNG" alt="img" title="img">
+                    <p>Bowie D05 무선 블루투스 5.3 헤드셋 </p>
+                    <span class="box_span">26,900원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/디지털/3.PNG" alt="img" title="img">
+                    <p>독거미 F99 기계식 키보드</p>
+                    <span class="box_span">70,750원</span>
+                </div>
+            </div>
+            <hr class="mb-5 mt-5">
+            <!-- 팬시 -->
+            <p class="title">팬시</p>
+            <div class="box_area d-flex justify-content-between">
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/팬시/1.PNG" alt="img" title="img">
+                    <p>명품 자동 장우산</p>
+                    <span class="box_span">31,600원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/팬시/2.PNG" alt="img" title="img">
+                    <p>14K 윙블링 원터치 링 귀걸이(주문제작)</p>
+                    <span class="box_span">250,000원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/팬시/3.PNG" alt="img" title="img">
+                    <p>14K 윙블링 메르시 목걸이(주문제작)</p>
+                    <span class="box_span">265,000원</span>
+                </div>
+            </div>
+            <hr class="mb-5 mt-5">
+            <!-- 향수 -->
+            <p class="title">향수</p>
+            <div class="box_area d-flex justify-content-between">
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/향수/1.PNG" alt="img" title="img">
+                    <p>에스쁘아 솔리드 퍼퓸 4.2g</p>
+                    <span class="box_span">26,000원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/향수/2.PNG" alt="img" title="img">
+                    <p>호텔도슨 향수 오드퍼퓸 75ml</p>
+                    <span class="box_span">153,000원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/향수/3.PNG" alt="img" title="img">
+                    <p>랑방 레 플레르 EDT 90ml</p>
+                    <span class="box_span">64,500원</span>
+                </div>
+            </div>
+            <hr class="mb-5 mt-5">
+            <!-- 헤어케어 -->
+            <p class="title">헤어케어</p>
+            <div class="box_area d-flex justify-content-between  pb-5">
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/헤어케어/1.PNG" alt="img" title="img">
+                    <p>어노브 딥 데미지 트리트먼트 EX 더블</p>
+                    <span class="box_span">29,800원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/헤어케어/2.PNG" alt="img" title="img">
+                    <p>려 루트젠 여성맞춤 볼륨 탈모증상케어 샴퓨 353mll</p>
+                    <span class="box_span">21,900원</span>
+                </div>
+                <div class="box">
+                    <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/헤어케어/3.PNG" alt="img" title="img">
+                    <p>라보에이치 두피쿨링&노세범 샴푸 333ml</p>
+                    <span class="box_span">19,800원</span>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- 콘텐츠 영역 -->
-    <main>
-        <!-- 판매상품 -->
-        <div class="sales_products">
-            <div class="containers">
-                <!-- 건강식품 -->
-                <p class="title">건강식품</p>
-                <div class="d-flex justify-content-between">
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/건강식품/1.PNG" alt="img" title="img">
-                        <p>이뮨 멀티비타민&미네랄</p>
-                        <span class="box_span">65,000원</span>
-                        <span class="tpdlf_span">75,000</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/건강식품/2.PNG" alt="img" title="img">
-                        <p>센트룸</p>
-                        <span class="box_span">27,000원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/건강식품/3.PNG" alt="img" title="img">
-                        <p>닥터브라이언</p>
-                        <span class="box_span">2,000원</span>
-                    </div>
-                </div>
-                <hr class="mb-5 mt-5">
-                <!-- 디지털 -->
-                <p class="title">디지털</p>
-                <div class="box_area d-flex justify-content-between">
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/디지털/1.PNG" alt="img" title="img">
-                        <p>PANTONE PD충전 보조배터리</p>
-                        <span class="box_span">24,400원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/디지털/2.PNG" alt="img" title="img">
-                        <p>Bowie D05 무선 블루투스 5.3 헤드셋 </p>
-                        <span class="box_span">26,900원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/디지털/3.PNG" alt="img" title="img">
-                        <p>독거미 F99 기계식 키보드</p>
-                        <span class="box_span">70,750원</span>
-                    </div>
-                </div>
-                <hr class="mb-5 mt-5">
-                <!-- 팬시 -->
-                <p class="title">팬시</p>
-                <div class="box_area d-flex justify-content-between">
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/팬시/1.PNG" alt="img" title="img">
-                        <p>명품 자동 장우산</p>
-                        <span class="box_span">31,600원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/팬시/2.PNG" alt="img" title="img">
-                        <p>14K 윙블링 원터치 링 귀걸이(주문제작)</p>
-                        <span class="box_span">250,000원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/팬시/3.PNG" alt="img" title="img">
-                        <p>14K 윙블링 메르시 목걸이(주문제작)</p>
-                        <span class="box_span">265,000원</span>
-                    </div>
-                </div>
-                <hr class="mb-5 mt-5">
-                <!-- 향수 -->
-                <p class="title">향수</p>
-                <div class="box_area d-flex justify-content-between">
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/향수/1.PNG" alt="img" title="img">
-                        <p>에스쁘아 솔리드 퍼퓸 4.2g</p>
-                        <span class="box_span">26,000원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/향수/2.PNG" alt="img" title="img">
-                        <p>호텔도슨 향수 오드퍼퓸 75ml</p>
-                        <span class="box_span">153,000원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/향수/3.PNG" alt="img" title="img">
-                        <p>랑방 레 플레르 EDT 90ml</p>
-                        <span class="box_span">64,500원</span>
-                    </div>
-                </div>
-                <hr class="mb-5 mt-5">
-                <!-- 헤어케어 -->
-                <p class="title">헤어케어</p>
-                <div class="box_area d-flex justify-content-between  pb-5">
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/헤어케어/1.PNG" alt="img" title="img">
-                        <p>어노브 딥 데미지 트리트먼트 EX 더블</p>
-                        <span class="box_span">29,800원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/헤어케어/2.PNG" alt="img" title="img">
-                        <p>려 루트젠 여성맞춤 볼륨 탈모증상케어 샴퓨 353mll</p>
-                        <span class="box_span">21,900원</span>
-                    </div>
-                    <div class="box">
-                        <img src="./[2025년 지방] 웹디자인및개발 (과제)/선수제공파일/A-Module/images/헤어케어/3.PNG" alt="img" title="img">
-                        <p>라보에이치 두피쿨링&노세범 샴푸 333ml</p>
-                        <span class="box_span">19,800원</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 공지사항 -->
-        <div class="gongji">
-            <div class="containers">
-                <p class="title">공지사항</p>
-                <table class="table gongji_table">
-                    <tr>
-                        <th>유형</th>
-                        <th>제목</th>
-                        <th>공지일자</th>
-                    </tr>
-                    <tr>
-                        <td>이벤트</td>
-                        <td>24년 7월 <헬스+출석체크인> 이벤트 당첨자 공지</td>
-                        <td>2024.08.08</td>
-                    </tr>
-                    <tr>
-                        <td>이벤트</td>
-                        <td>7월 [기프트몰TV 보러갈래?] 이벤트 당첨자 발표</td>
-                        <td>2024.08.07</td>
-                    </tr>
-                    <tr>
-                        <td>일반</td>
-                        <td>[배송안내] 8/14(수)~8/15(목) 택배사 휴무 관련</td>
-                        <td>2024.08.06</td>
-                    </tr>
-                    <tr>
-                        <td>일반</td>
-                        <td>딘토 이벤트 조기 종료 안내 </td>
-                        <td>2024.08.05</td>
-                    </tr>
-                    <tr>
-                        <td>일반</td>
-                        <td>하월곡점 폐점으로 인한 영업종료 안내</td>
-                        <td>2024.07.31</td>
-                    </tr>
-                    <tr>
-                        <td>일반</td>
-                        <td>양평점 리로케이션으로 인한 영업 중단 안내</td>
-                        <td>2024.07.31</td>
-                    </tr>
-                    <tr>
-
-                    </tr>
-                </table>
-                <div class="btn-group">
-                    <button>◀</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>▶</button>
-                </div>
-            </div>
-        </div>
-        <!-- 상품입점/제휴문의 -->
-        <div class="sangpum">
-            <div class="containers">
-                <!-- 배너 -->
-                <div class="title_box">
-                    <p class="title">대한민국 No.1</p>
-                    <p class="sub_title">GIFTS:Mall과 함께 할 WIN-WIN 파트너를 찾습니다.</p>
-                    <p>제휴사의 많은 지원을 기다립니다.
-                    </p>
-                </div>
-                <div class="pic_box">
-                    <div class="pic">
-                        <img src="./img/대타.png" alt="img" title="img">
-                        <p>상품입점/제휴문의</p>
-                    </div>
-                    <div class="pic">
-                        <img src="./img/대타.png" alt="img" title="img">
-                        <p>문의결과조회</p>
-                    </div>
-                    <div class="pic">
-                        <img src="./img/대타.png" alt="img" title="img">
-                        <p>전자계약시스템</p>
-                    </div>
-                    <div class="pic">
-                        <img src="./img/대타.png" alt="img" title="img">
-                        <p>파트너시스템</p>  
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 입점절차 -->
-        <div class="ipjum">
-            <div class="containers">
-                <table class="ip_table">
-                    <tr>
-                        <td colspan="2" class="text-center">
-                            <p>입점절차</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Step.1</p>
-                            <span>임시회원가입</span>
-                        </td>
-                        <td>
-                            <span>미거래 업체는 임시회원 가입/ 로그인 후 상담신청을 하실 수 있습니다.</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Step.2</p>
-                            <span>온라인상담</span>
-                        </td>
-                        <td>
-                            <span>GIFTS:Mall 입점/제휴를 위해서는 온라인 상담이 선행되어야 합니다. 상담 문의 후 사이트를 통해 결과를 안내해 드립니다.</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Step.3</p>
-                            <span>방문상담</span>
-                        </td>
-                        <td>
-                            <span>온라인 상담이 긍정적일 경우, 담당MD/제휴담당자와 구체적인 상담을 진행하게 됩니다.</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Step.4</p>
-                            <span>품평회</span>
-                        </td>
-                        <td>
-                            <span>공정한 평가를 위해 상품력, 기획력, 영업력, 판촉력 등의 항목을 기준으로 내부 품평회를 진행합니다.</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Step.5</p>
-                            <span>신용평가</span>
-                        </td>
-                        <td>
-                            <span>입점확정 협력사의 경우 신뢰있는 거래를 위해 신용평가를 받고 있습니다.</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Step.6</p>
-                            <span>계약체결</span>
-                        </td>
-                        <td>
-                            <span>전자계약서(또는 수기계약서)를 통해 거래계약서와 관련서류를 작성하시면 입점절차가 완료됩니다.</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- 푸터 영역 -->
-    <footer>
+    <!-- 공지사항 -->
+    <div class="gongji">
         <div class="containers">
-            <div class="jajal_box">
-                <div class="m-3">
-                    (주)GIFTS:Mall | 사업자등록번호 : 809-81-01157 | 대표이사 황기영<br>
-                    주소 : 서울특별시 용산구 한강대로 123, 40층<br>
-                    본사 대표전화 : 02-123-4567 | GIFTS:Mall 가맹상담전화 : 02-123-4568 <br>
-                    COPYRIGHTⓒ 2024 GIFTS:MALL KOREA INC. ALL RIGHTS RESERVED <br>
-                </div>
-                <div class="m-3">
-                    고객센터 이용안내<br>
-                    - 온라인몰 고객센터 1580-8282<br>
-                    - 매장고객센터 1577-8254<br>
-                </div>
-                <div class="m-3">
-                    고객센터 운영시간 [평일 09:00 - 18:00]<br>
-                    <br>
-                    주말 및 공휴일은 1:1문의하기를 이용해주세요.<br>
-                    업무가 시작되면 바로 처리해드립니다.<br>
-                </div>
-                <div class="m-3">
-                    지방은행구매안전서비스<br>
-                    GIFTS:Mall은 현금 결제한 금액에 대해 지방은행과 채무지급보증 <br>
-                    계약을체결하여 안전한 거래를 보장하고 있습니다<br>
-                    서비스 가입사실 확인 ><br>
-                </div>
-            </div>
-            <hr>
-            <div class="ml-3">
-                개인정보처리방침 | 이용약관.법적고지 | 청소년보호방침 | 이메일무단수집거부 | 사이트맵 | 채용
-            </div>
-            <div class="img_box m-3">
-                <img src="./img/sns1.png" alt="img" title="img">
-                <img src="./img/sns2.png" alt="img" title="img">
-                <img src="./img/sns3.png" alt="img" title="img">
-                <img src="./img/sns4.png" alt="img" title="img">
-                <img src="./img/sns5.png" alt="img" title="img">
-            </div>
-            <div class="logo m-3">
-                <img src="./logo.png" alt="img" title="img">
+            <p class="title">공지사항</p>
+            <table class="table gongji_table">
+                <tr>
+                    <th>유형</th>
+                    <th>제목</th>
+                    <th>공지일자</th>
+                </tr>
+                <tr>
+                    <td>이벤트</td>
+                    <td>24년 7월 <헬스+출석체크인> 이벤트 당첨자 공지</td>
+                    <td>2024.08.08</td>
+                </tr>
+                <tr>
+                    <td>이벤트</td>
+                    <td>7월 [기프트몰TV 보러갈래?] 이벤트 당첨자 발표</td>
+                    <td>2024.08.07</td>
+                </tr>
+                <tr>
+                    <td>일반</td>
+                    <td>[배송안내] 8/14(수)~8/15(목) 택배사 휴무 관련</td>
+                    <td>2024.08.06</td>
+                </tr>
+                <tr>
+                    <td>일반</td>
+                    <td>딘토 이벤트 조기 종료 안내 </td>
+                    <td>2024.08.05</td>
+                </tr>
+                <tr>
+                    <td>일반</td>
+                    <td>하월곡점 폐점으로 인한 영업종료 안내</td>
+                    <td>2024.07.31</td>
+                </tr>
+                <tr>
+                    <td>일반</td>
+                    <td>양평점 리로케이션으로 인한 영업 중단 안내</td>
+                    <td>2024.07.31</td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <div class="btn-group">
+                <button>◀</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>▶</button>
             </div>
         </div>
-    </footer>
-</body>
-
-</html>
+    </div>
+    <!-- 상품입점/제휴문의 -->
+    <div class="sangpum">
+        <div class="containers">
+            <!-- 배너 -->
+            <div class="title_box">
+                <p class="title">대한민국 No.1</p>
+                <p class="sub_title">GIFTS:Mall과 함께 할 WIN-WIN 파트너를 찾습니다.</p>
+                <p>제휴사의 많은 지원을 기다립니다.
+                </p>
+            </div>
+            <div class="pic_box">
+                <div class="pic">
+                    <img src="./img/대타.png" alt="img" title="img">
+                    <p>상품입점/제휴문의</p>
+                </div>
+                <div class="pic">
+                    <img src="./img/대타.png" alt="img" title="img">
+                    <p>문의결과조회</p>
+                </div>
+                <div class="pic">
+                    <img src="./img/대타.png" alt="img" title="img">
+                    <p>전자계약시스템</p>
+                </div>
+                <div class="pic">
+                    <img src="./img/대타.png" alt="img" title="img">
+                    <p>파트너시스템</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 입점절차 -->
+    <div class="ipjum">
+        <div class="containers">
+            <table class="ip_table">
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <p>입점절차</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Step.1</p>
+                        <span>임시회원가입</span>
+                    </td>
+                    <td>
+                        <span>미거래 업체는 임시회원 가입/ 로그인 후 상담신청을 하실 수 있습니다.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Step.2</p>
+                        <span>온라인상담</span>
+                    </td>
+                    <td>
+                        <span>GIFTS:Mall 입점/제휴를 위해서는 온라인 상담이 선행되어야 합니다. 상담 문의 후 사이트를 통해 결과를 안내해 드립니다.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Step.3</p>
+                        <span>방문상담</span>
+                    </td>
+                    <td>
+                        <span>온라인 상담이 긍정적일 경우, 담당MD/제휴담당자와 구체적인 상담을 진행하게 됩니다.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Step.4</p>
+                        <span>품평회</span>
+                    </td>
+                    <td>
+                        <span>공정한 평가를 위해 상품력, 기획력, 영업력, 판촉력 등의 항목을 기준으로 내부 품평회를 진행합니다.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Step.5</p>
+                        <span>신용평가</span>
+                    </td>
+                    <td>
+                        <span>입점확정 협력사의 경우 신뢰있는 거래를 위해 신용평가를 받고 있습니다.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Step.6</p>
+                        <span>계약체결</span>
+                    </td>
+                    <td>
+                        <span>전자계약서(또는 수기계약서)를 통해 거래계약서와 관련서류를 작성하시면 입점절차가 완료됩니다.</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</main>
